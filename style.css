@@ -1,0 +1,36 @@
+@font-face {font-family: Christmas; src: url(./Fonts/SantasSleighFull.ttf);}
+
+body {font-family: Christmas;}
+
+@keyframes textChange {
+  0% {color: red; transform: rotate(-15deg);}
+  33% {color: green; transform: rotate(15deg);}
+  50% {color: green; transform: rotate(15deg);}
+  100% {color: red; transform: rotate(-15deg);}
+}
+
+body {
+  background-image: url("./Bilder/Background.jpg");
+  font-family: Christmas;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.div-1 {
+  color: red;
+  animation-name: textChange;
+  animation-duration: 3.2s;
+  animation-iteration-count: infinite;
+  font-size: xx-large;
+  text-indent: 75%;
+  transform-origin: 82%;
+}
+
+button {
+  position: absolute;
+  color: black;
+  background-color: gray;
+  left: 100px;
+  top: 100px;
+}

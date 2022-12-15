@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Julekort</title>
+        <link rel="stylesheet" href="julekort.css">
+    </head>
+    <body>
+        <div class="div-1">
+            <h1 id="animate">
+                God Jul
+            </h1>
+        </div>
+        <audio id="music" src="./Musikk/tchaikovsky-dance-of-the-sugar-plum-fairy.mp3" autoplay></audio>
+        <audio id="vine-boom" src="./Musikk/vine-boom.mp3" autoplay></audio>
+        <button id="button" onclick="play()">Klikk igjen</button>
+        <script>
+            setTimeout( function() {
+                document.getElementById('vine-boom').play();
+            }, 9200);
+            function play() {
+                var audio = document.getElementById("music");
+                audio.play();
+                document.getElementById("button").style.display = "none";
+            }
+        </script>
+    </body>
+</html>
